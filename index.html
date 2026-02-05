@@ -14,6 +14,14 @@
     <script src="dat.gui.min.js"></script>
     <!-- Umami Analytics -->
     <script defer src="https://umami.taocrypt.us.kg/script.js" data-website-id="24cb7204-f112-4ca6-83a1-196665af8feb"></script>
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments);
+        };
+        ga.l = +new Date();
+        ga("create", "UA-105392568-1", "auto");
+        ga("send", "pageview");
+    </script>
 </head>
 <body>
     <canvas></canvas>
@@ -30,7 +38,7 @@
                    target="_blank"
                    rel="noopener noreferrer"
                    class="github-link"
-                   aria-label="访问 Taocrypt 的 GitHub">
+                   aria-label="访问 Taocrypt の GitHub">
                     <svg class="github-icon"
                          aria-hidden="true"
                          viewBox="0 0 16 16"
@@ -45,7 +53,7 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="title.js" defer></script>
 </body>
 </html>
